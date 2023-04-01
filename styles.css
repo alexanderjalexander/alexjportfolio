@@ -1,0 +1,617 @@
+/* 
+-------------------------------
+DEFAULT CSS STYLING AND FORMATS
+-------------------------------
+*/
+
+
+
+body {
+    background-color: #333333;
+    --defaultwidth: 1700px;
+}
+
+h1 {
+    font-family: Hauser, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: Hauser, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: Exo, sans-serif;
+    color: white;
+    width: 100%;
+}
+
+.heading2 {
+    font-family: Hauser, sans-serif;
+    font-size: 75px;
+    line-height: 75px;
+    margin: 75px 25px 25px 25px;
+    width: auto;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.paragraph {
+    margin: 25px 25px;
+    width: auto;
+}
+
+/* 
+-------------------------------
+NAVBAR AND NAVBAR ELEMENTS
+-------------------------------
+*/
+
+.navbar {
+    display: block;
+    width: 100%;
+    background-color: #333333;
+    opacity: 1;
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    filter: drop-shadow(0px 0px 20px #000000);
+}
+
+.logo {
+    position: absolute;
+    font-family: Hauser, sans-serif;
+    font-style: italic;
+    padding: 10px 15px 10px 25px;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: white;
+    user-select: none;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 4;
+    margin: auto auto auto auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+#toggler,
+label {
+    display: none;
+    color: white;
+}
+
+.navlink {
+    font-family: Exo, sans-serif;
+    padding: 20px 20px 20px 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+
+    height: 100%;
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+
+.navlink:hover {
+    background-color: #ffffff;
+    font-weight: 900;
+    color: black;
+    transition: background-color 0.25s ease-in-out,
+        color 0.25s ease-in-out;
+}
+
+/* 
+-------------------------------
+DROPDOWN NAVBAR HANDLING
+-------------------------------
+*/
+
+.dropdown-nav {
+    float: right;
+    position: relative;
+    display: none;
+}
+
+.dropdown-btn {
+    color: white;
+    padding: 20px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    transition: 0.25s ease-in-out;
+}
+
+.dropdown-btn:hover {
+    color: black;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+
+    transition: background-color 0.25s ease-in-out,
+        color 0.25s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    background-color: #333333;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+/* 
+-------------------------------
+INTRO SECTION & CONTAINER
+-------------------------------
+*/
+
+.intro-section {
+    overflow: visible;
+    display: block;
+    height: 100vh;
+    /* filter: drop-shadow(0px 0px 20px #000000); */
+
+}
+
+.intro-container {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+
+    position: relative;
+    margin: 35vh auto auto auto;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro-header {
+    display: block;
+    font-family: Hauser, sans-serif;
+    font-size: max(6vw, 60px);
+    line-height: max(8vw, 60px);
+    width: auto;
+    margin: auto min(8vw, 50px) 5px min(8vw, 50px);
+    padding-bottom: 0.1vw;
+    color: white;
+
+    text-decoration: underline;
+    text-decoration-color: white;
+    min-width: 100px;
+}
+
+.intro-desc {
+    display: block;
+    font-family: Exo, sans-serif;
+    color: white;
+    margin: auto max(10vw, 50px);
+    font-size: 20px;
+}
+
+.intro-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .intro-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 
+-------------------------------
+ABOUT MYSELF SECTION
+-------------------------------
+*/
+
+.about-section {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: auto auto auto auto;
+    max-width: 1500px;
+
+}
+
+.portrait-picture {
+    border-radius: 15px 50px;
+    flex-basis: 50vw;
+    min-width: 200px;
+    max-width: 450px;
+}
+
+.about-info {
+    flex-basis: 50%;
+}
+
+
+/* 
+-------------------------------
+PROJECTS AND SKILLS SECTION
+-------------------------------
+*/
+
+.projects {
+    display: block;
+    width: 100%;
+}
+
+.projects-container {
+    display: block;
+    max-width: var(--defaultwidth);
+    margin: auto auto auto auto;
+}
+
+.projects-tab {
+    margin: 25px auto;
+    width: 85%;
+    overflow: visible;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    display: block;
+    overflow: visible;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+
+
+input[type=checkbox]:checked~.projects-item {
+    max-height: 100vh;
+    border-bottom-width: 5px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+input[type=checkbox]:checked + label > .project-picture {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: border-bottom-left-radius  0.5s cubic-bezier(0, 1, 0, 1),
+                border-bottom-right-radius 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.project-picture {
+    cursor: pointer;
+    display: block;
+    position: static;
+    overflow: hidden;
+    object-fit: cover;
+    border: solid 5px white;
+    border-radius: 25px;
+    transition: border-bottom-left-radius  0.5s cubic-bezier(1, 0, 1, 0),
+                border-bottom-right-radius 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+#programming {
+    object-position: 50% 75%;
+    width: 100%;
+    height: 200px;
+}
+
+#video {
+    object-position: 50% 50%;
+    width: 100%;
+    height: 200px;
+}
+
+#motion {
+    object-position: 50% 30%;
+    width: 100%;
+    height: 200px;
+}
+
+#design {
+    object-position: 50% 30%;
+    width: 100%;
+    height: 200px;
+}
+
+#animation {
+    object-position: 50% 10%;
+    width: 100%;
+    height: 200px;
+}
+
+.projects-item {
+    display: block;
+    width: 100%;
+    max-height: 0vh;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 15px 2px;
+    border: solid 5px white;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: border-bottom-width 0.5s cubic-bezier(1,0,1,.5),
+                max-height 0.5s ease-in-out;
+}
+
+.project-item-heading {
+    font-family: Hauser, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 25px 50px;
+    color: white;
+}
+
+.checkbox-label {
+    position: relative;
+    text-align: center;
+}
+
+.project-picture-heading {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    font-family: Hauser, sans-serif;
+    font-size: 75px;
+    letter-spacing: 1px;
+    filter: drop-shadow(0px 0px 20px #000000);
+}
+
+.project-item-experience {
+    font-family: Exo, sans-serif;
+    font-size: 30px;
+    margin: 0px 50px;
+    color: white;
+}
+
+.project-paragraph {
+    margin: 0px 75px;
+    width: auto;
+}
+
+.project-link {
+    display: block;
+    font-family: Exo, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin: 25px 100px;
+    color: white;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    padding: 20px;
+
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+
+    transition: 0.25s ease-in-out;
+}
+
+.project-link:hover {
+    color: black;
+    background-color: white;
+    transition: 0.25s ease-in-out;
+}
+
+.project-link:active {
+    background-color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    transition: 0.1s;
+}
+
+/* 
+-------------------------------
+CONTACT AND SOCIALS SECTION 
+-------------------------------
+*/
+
+.contact {
+    display: block;
+    width: 100%;
+}
+
+.contact-container {
+    display: block;
+    margin: auto;
+    max-width: var(--defaultwidth);
+}
+
+.contact-info-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 5%;
+}
+
+.contact-link {
+    cursor: pointer;
+    font-family: Exo, sans-serif;
+    font-size: 40px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+
+    padding: 20px;
+    margin: 10px;
+
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+
+    transition: 0.25s ease-in-out;
+}
+
+.contact-link:hover {
+    font-size: 45px;
+    padding: 25px;
+
+    color: black;
+    background-color: white;
+
+
+}
+
+.contact-link:active {
+    background-color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    transition: 0.1s;
+}
+
+/* 
+-------------------------------
+HANDLING RESPONSIVENESS, RESIZING
+-------------------------------
+*/
+
+@media screen and (max-width: 1032px) {
+
+    /* HANDING ABOUT ME SECTION */
+    .about-info {
+        flex-basis: 100%;
+    }
+
+    .portrait-picture {
+        flex-basis: 60%;
+        max-width: 600px;
+    }
+
+    .project-picture-heading {
+        font-size: max(6vw, 25px);
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .intro-header {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .dropdown-nav {
+        display: block;
+    }
+
+    .project-item-heading {
+        font-size: 3em;
+        margin: 5vw 10vw;
+    }
+
+    .project-item-experience {
+        font-size: 2em;
+        margin: 0vw 10vw;
+    }
+
+    .project-paragraph {
+        margin: 0vw 10vw;
+    }
+
+    .project-link {
+        margin: 6vw 10vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-item-heading {
+        font-size: 1.5em;
+        margin: 5vw 10vw;
+    }
+    .project-item-experience {
+        font-size: 1em;
+        margin: 0vw 10vw;
+    }
+    .portrait-picture {
+        width: 100%;
+    }
+    .heading2 {
+        font-size: 13vw;
+        line-height: 13vw;
+    }
+    .project-picture-heading {
+        filter: drop-shadow(0px 0px 5px #000000);
+    }
+    .contact-link {
+        margin: 1vw;
+        font-size: max(6vw, 20px);
+    }
+    input[type=checkbox]:checked~.projects-item {
+        max-height: 150vh;
+        border-bottom-width: 5px;
+        transition: max-height 0.5s ease-in-out;
+    }
+}
+
+/* 
+-------------------------------
+FONT IMPORTING AND FONT HANDLING
+-------------------------------
+*/
+
+@font-face {
+    font-family: 'Hauser';
+    src: url('fonts/Hauser.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-kerning: none;
+}
+
+@font-face {
+    font-family: 'Hauser Condensed', sans-serif;
+    src: url('fonts/Hauser Condensed.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-kerning: none;
+}
