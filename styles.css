@@ -196,6 +196,7 @@ INTRO SECTION & CONTAINER
     display: block;
     font-family: Hauser, sans-serif;
     font-size: max(6vw, 60px);
+    font-style: italic;
     line-height: max(8vw, 60px);
     width: auto;
     margin: auto min(8vw, 50px) 5px min(8vw, 50px);

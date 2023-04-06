@@ -1,0 +1,38 @@
+/* 
+-------------------------------
+CSS STYLING FOR OTHER PAGES
+-------------------------------
+*/
+
+body {
+    background-color: #333333;
+    --defaultwidth: 1500px;
+}
+
+.project-page-about-div {
+    display: block;
+    width: 100%;
+    max-width: var(--defaultwidth);
+    margin: auto;
+    color: white;
+}
+
+.project-page-about-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.project-page-projects-div {
+    display: block;
+    width: 100%;
+    max-width: var(--defaultwidth);
+    margin: auto;
+    color: white;
+}
+
+.project-page-projects-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
