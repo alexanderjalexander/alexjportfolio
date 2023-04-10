@@ -288,8 +288,9 @@ PROJECTS AND SKILLS SECTION
     margin: 25px auto;
     width: 85%;
     overflow: hidden;
-    border: solid 5px white;
     border-radius: 25px;
+    box-shadow:  27px 27px 54px #1c1c1c,
+                -27px -27px 54px #4a4a4a;
 }
 
 input[type=checkbox] {
@@ -301,15 +302,11 @@ input[type=checkbox]+label {
     overflow: visible;
     object-fit: cover;
     object-position: 100% 100%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 input[type=checkbox] + label:hover {
-    filter: sepia() saturate(150%) hue-rotate(180deg) brightness(1.25);
-}
-
-input[type=checkbox]:checked + label {
-    filter: sepia() saturate(150%) hue-rotate(180deg);
+    filter: brightness(1.25);
 }
 
 input[type=checkbox]:checked~.projects-item {
@@ -321,7 +318,7 @@ input[type=checkbox]:checked~.projects-item {
 
 input[type=checkbox]:checked + label > .project-picture {
     filter: blur(5px);
-    transition: filter 0.5s ease-in-out;
+    transition: filter 0.25s ease-in-out;
 }
 
 .project-picture {
@@ -339,33 +336,58 @@ input[type=checkbox]:checked + label > .project-picture {
 }
 
 #programming {
-    object-position: 50% 75%;
     width: 100%;
     height: 200px;
+    
+    position: static;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-image: linear-gradient(145deg, #bc00008b, #0016878b),
+        url('images/Programming.png');
 }
 
 #video {
-    object-position: 50% 50%;
     width: 100%;
     height: 200px;
+    
+    position: static;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-image: linear-gradient(145deg, #bc00008b, #0016878b),
+        url('images/Video\ Editing.png');
 }
 
 #motion {
-    object-position: 50% 30%;
     width: 100%;
     height: 200px;
+    
+    position: static;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-image: linear-gradient(145deg, #bc00008b, #0016878b),
+        url('images/Motion\ Graphics.png');
 }
 
 #design {
-    object-position: 50% 30%;
     width: 100%;
     height: 200px;
+    
+    position: static;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-image: linear-gradient(145deg, #bc00008b, #0016878b),
+        url('images/Graphic\ Design.PNG');
 }
 
 #animation {
-    object-position: 50% 10%;
     width: 100%;
     height: 200px;
+    
+    position: static;
+    background-position: 50% 75%;
+    background-size: cover;
+    background-image: linear-gradient(145deg, #bc00008b, #0016878b),
+        url('images/Animation.png');
 }
 
 .projects-item {
@@ -373,7 +395,9 @@ input[type=checkbox]:checked + label > .project-picture {
     width: 100%;
     max-height: 0vh;
     overflow: hidden;
-    box-shadow: inset 0px 0px 15px 2px;
+    color:rgba(0, 0, 0, 0);
+    /* box-shadow: inset 0px 0px 15px 2px; */
+    background: linear-gradient(145deg, #404040, #202020);
     border: solid 0px white;
     transition: border-top-width 0.5s cubic-bezier(1,0,1,.5),
                 max-height 0.5s ease-in-out;
