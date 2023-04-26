@@ -71,6 +71,7 @@ body {
 
 #proplive {
     object-fit: cover;
+    object-position: 50% 25%;
 }
 
 @media screen and (max-width: 1032px) {
