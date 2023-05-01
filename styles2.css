@@ -48,6 +48,23 @@ body {
                 -27px -27px 54px #4a4a4a;
 }
 
+.project-page-projects-container-flex {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.project-tab-flex {
+    display: block;
+    width: 75vw;
+    margin: 25px auto 25px auto;
+    padding: 25px;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #404040, #202020);
+    box-shadow:  27px 27px 54px #1c1c1c,
+                -27px -27px 54px #4a4a4a;
+}
+
 .project-tab-heading {
     font-family: Hauser, sans-serif;
     font-size: 40px;
