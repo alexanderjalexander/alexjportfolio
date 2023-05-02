@@ -39,7 +39,7 @@ body {
 
 .project-tab {
     display: block;
-    width: 75vw;
+    width: 80%;
     margin: 25px auto 25px auto;
     padding: 25px;
     border-radius: 25px;
@@ -50,19 +50,33 @@ body {
 
 .project-page-projects-container-flex {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin: auto;
 }
 
 .project-tab-flex {
+    flex-basis: 35%;
+    max-width: 80%;
     display: block;
-    width: 75vw;
     margin: 25px auto 25px auto;
     padding: 25px;
     border-radius: 25px;
     background: linear-gradient(145deg, #404040, #202020);
-    box-shadow:  27px 27px 54px #1c1c1c,
-                -27px -27px 54px #4a4a4a;
+    box-shadow:  16px 16px 32px #1c1c1c,
+                    -16px -16px 32px #4a4a4a;
+}
+
+.yt-video {
+    flex-basis: 35%;
+    max-width: 80%;
+    height: min(260px, 20vw);
+    border-radius: 25px;
+    display: block;
+    margin: 25px auto 25px auto;
 }
 
 .project-tab-heading {
@@ -96,7 +110,9 @@ body {
 }
 
 @media screen and (max-width: 860px) {
-
+    .project-tab-flex {
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {

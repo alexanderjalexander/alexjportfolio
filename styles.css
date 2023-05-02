@@ -48,6 +48,19 @@ p {
     text-decoration-color: white;
 }
 
+.heading3 {
+    font-family: Hauser, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 50px 25px 25px 25px;
+    width: auto;
+    color: white;
+
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration-color: white;
+}
+
 .paragraph {
     margin: 25px 25px;
     width: auto;
