@@ -71,13 +71,47 @@ body {
 }
 
 .yt-video {
-    flex-basis: 35%;
-    max-width: 80%;
-    height: min(260px, 20vw);
-    border-radius: 25px;
+    overflow: hidden;
+    flex-basis: 40%;
+    
     display: block;
+    width: 100%;
+    height: 20vw;
+
+    border-radius: 25px;
     margin: 25px auto 25px auto;
+    box-shadow:  16px 16px 32px #1c1c1c,
+                    -16px -16px 32px #4a4a4a;
+
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color:#bc00008b;
+    transition: background-color 0.25s ease-in-out;
 }
+
+.yt-video:hover {
+    background-blend-mode: multiply;
+    background-color:#bc000000;
+    transition: background-color 0.25s ease-in-out;
+}
+
+#revenant {
+    background-image: url('images/video/revenant.jpg');
+}
+
+#pathfinder {
+    background-image: url('images/video/pathfinder.jpg');
+}
+
+#horizon {
+    background-image: url('images/video/horizon.jpg');
+    background-blend-mode: overlay;
+}
+
+
 
 .project-tab-heading {
     font-family: Hauser, sans-serif;
@@ -111,6 +145,9 @@ body {
 
 @media screen and (max-width: 860px) {
     .project-tab-flex {
+        flex-basis: 100%;
+    }
+    .yt-video {
         flex-basis: 100%;
     }
 }
