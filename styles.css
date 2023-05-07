@@ -12,7 +12,10 @@ DEFAULT CSS STYLING AND FORMATS
 */
 
 body {
-    background-color: #333333;
+    /* background-color: #333333; */
+    background-image: linear-gradient(145deg, #555555, #333333);
+    background-position: center;
+    background-attachment: fixed;
     --defaultwidth: 1700px;
 }
 
