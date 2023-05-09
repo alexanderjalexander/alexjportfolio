@@ -89,13 +89,47 @@ body {
     background-position: center;
     background-blend-mode: multiply;
     background-color:#bc00008b;
-    transition: background-color 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .yt-video:hover {
+    width: 120%;
+    flex-basis: 50%;
+    height: 25vw;
     background-blend-mode: multiply;
     background-color:#bc000000;
-    transition: background-color 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.commission {
+    overflow: hidden;
+    flex-basis: 40%;
+    
+    display: block;
+    width: 100%;
+    height: 20vw;
+
+    border-radius: 25px;
+    margin: 25px auto;
+    box-shadow:  16px 16px 32px #1c1c1c,
+                    -16px -16px 32px #4a4a4a;
+
+    position: static;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color:#0067bc8b;
+    transition: all 0.25s ease-in-out;
+}
+
+.commission:hover {
+    width: 120%;
+    flex-basis: 50%;
+    height: 25vw;
+    background-blend-mode: multiply;
+    background-color:#0067bc00;
+    transition: all 0.25s ease-in-out;
 }
 
 #revenant {
@@ -111,7 +145,82 @@ body {
     background-blend-mode: overlay;
 }
 
+#fuse {
+    background-image: url('images/video/fuse.jpg');
+}
 
+#valkyrie {
+    background-image: url('images/video/valkryie.jpg');
+}
+
+#seer {
+    background-image: url('images/video/seer.jpg');
+}
+
+#battlefield {
+    background-image: url('images/video/battlefield.jpg');
+}
+
+#ash {
+    background-image: url('images/video/ash.jpg');
+}
+
+#mad-maggie {
+    background-image: url('images/video/maggie.jpg');
+}
+
+#newcastle {
+    background-image: url('images/video/newcastle.jpg');
+}
+
+#retro-1-crypto {
+    background-image: url('images/video/commissions/retro-1-crypto.jpg');
+    background-blend-mode: overlay;
+}
+#retro-2-volt {
+    background-image: url('images/video/commissions/retro-2-volt.jpg');
+}
+#retro-3-amongus {
+    background-image: url('images/video/commissions/retro-3-amongus.jpg');
+}
+#retro-4-cyberpunk {
+    background-image: url('images/video/commissions/retro-4-cyberpunk.jpg');
+}
+#retro-5-memetrailer {
+    background-image: url('images/video/commissions/retro-5-memetrailer.jpg');
+}
+#retro-6-wargames {
+    background-image: url('images/video/commissions/retro-6-wargames.jpg');
+}
+#retro-7-arenas {
+    background-image: url('images/video/commissions/retro-7-arenas.jpg');
+}
+#retro-8-arenastut {
+    background-image: url('images/video/commissions/retro-8-arenastut.jpg');
+}
+#retro-9-genesis {
+    background-image: url('images/video/commissions/retro-9-genesis.jpg');
+}
+#retro-10-rampart {
+    background-image: url('images/video/commissions/retro-10-rampart.jpg');
+}
+#retro-11-vantage {
+    background-image: url('images/video/commissions/retro-11-vantage.jpg');
+}
+#retro-12-gunrun {
+    background-image: url('images/video/commissions/retro-12-gunrun.jpg');
+}
+#retro-13-tdm {
+    background-image: url('images/video/commissions/retro-13-tdm.jpg');
+}
+
+#mccreamy-overwatch {
+    background-image: url('images/video/commissions/mccreamy-overwatch.jpg');
+}
+
+#mccreamy-banner {
+    object-position: 100% 50%;
+}
 
 .project-tab-heading {
     font-family: Hauser, sans-serif;
@@ -121,14 +230,36 @@ body {
     color: white;
 }
 
-.project-tab-picture {
+.youtuber-header {
     display: block;
-    height: 250px;
-    width: 90%;
+    position: relative;
     margin: auto;
-    position: static;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.project-tab-pfp {
+    position: absolute;
+    max-width: 200px;
+    margin: 10px;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+    border-radius: 100%;
+    filter: drop-shadow(10px 10px 20px #000000);
+}
+
+.project-tab-picture {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    margin: auto;
     overflow: hidden;
-    object-fit: none;
+    object-fit: cover;
     border-radius: 25px;
     box-shadow:  27px 27px 54px #1c1c1c,
                 -27px -27px 54px #4a4a4a;
@@ -150,9 +281,26 @@ body {
     .yt-video {
         flex-basis: 100%;
     }
+    .yt-video:hover {
+        flex-basis: 100%;
+        height: 40vw;
+    }
+    .commission {
+        flex-basis: 100%;
+    }
+    .commission:hover {
+        flex-basis: 100%;
+        height: 40vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
-
+    .project-tab-pfp {
+        align-self: center;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
